@@ -120,6 +120,8 @@ var require_optional = function(name, options) {
   return moduleEntry;
 }
 
+require_optional.infinite_loop_fix = true
+
 require_optional.exists = function(name) {
   try {
     var m = require_optional(name);
